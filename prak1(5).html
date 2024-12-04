@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" type="text/css" href="adaptive_styles.css" />
+</head>
+<body>
+    <main>
+        <script>
+            // 1: Приветствие
+            const userName = prompt("1. Приветствие\nВведите ваше имя:");
+            const userAge = prompt("Задание 1. Приветствие\nВведите ваш возраст:");
+    
+            alert(`1. Приветствие\nПривет, ${userName}. Ваш возраст: ${userAge}`);
+            console.log(`Привет, ${userName}. Ваш возраст: ${userAge}`);
+    
+            // 2: Проверка возраста
+            if (userAge >= 18) {
+                alert("2. Проверка возраста\nВы совершеннолетний");
+                console.log("Вы совершеннолетний");
+            } else {
+                alert("2. Проверка возраста\nВы несовершеннолетний");
+                console.log("Вы несовершеннолетний");
+            }
+    
+            // 3: Угадай число
+            const randomNumber = Math.floor(Math.random() * 10) + 1;
+            const userGuess = parseInt(prompt("3. Угадайте число\nУгадайте число от 1 до 10:"));
+    
+            if (userGuess === randomNumber) {
+                alert("3. Угадайте число\nПоздравляем! Вы угадали число!");
+                console.log("Поздравляем! Вы угадали число!");
+            } else if (userGuess < randomNumber) {
+                alert("3. Угадайте число\nНеверно, загаданное число больше.");
+                console.log("Неверно, загаданное число больше.");
+            } else {
+                alert("3. Угадайте число\nНеверно, загаданное число меньше.");
+                console.log("Неверно, загаданное число меньше.");
+            }
+    
+            // 4: Проверка пароля
+            const correctPassword = "12345";
+            const userPassword = prompt("4. Проверка пароля\nВведите пароль:");
+    
+            if (userPassword === correctPassword) {
+                alert("4. Проверка пароля\nДоступ разрешен");
+                console.log("Доступ разрешен");
+            } else if (userPassword === "") {
+                alert("4. Проверка пароля\nПароль не может быть пустым");
+                console.log("Пароль не может быть пустым");
+            } else {
+                alert("4. Проверка пароля\nДоступ запрещен");
+                console.log("Доступ запрещен");
+            }
+    
+            // 5: Калькулятор
+            const num1 = parseFloat(prompt("5. Калькулятор\nВведите первое число:"));
+            const num2 = parseFloat(prompt("5. Калькулятор\nВведите второе число:"));
+            const operator = prompt("5. Калькулятор\nВведите оператор (+, -, *, /):");
+    5
+            let result;
+            if (operator === "+") {
+                result = num1 + num2;
+            } else if (operator === "-") {
+                result = num1 - num2;
+            } else if (operator === "*") {
+                result = num1 * num2;
+            } else if (operator === "/") {
+                if (num2 !== 0) {
+                    result = num1 / num2;
+                } else {
+                    result = "Ошибка: деление на ноль";
+                }
+            } else {
+                result = "Неверный оператор";
+            }
+    
+            alert(`5. Калькулятор\nРезультат: ${result}`);
+            console.log(`Результат: ${result}`);
+        </script>
+    </main>
+
+</body>
+</html>

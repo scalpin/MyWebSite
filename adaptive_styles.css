@@ -1,0 +1,917 @@
+body {
+    font-family: system-ui;
+    width: 100%;
+    font-size: 16px;
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+}
+
+.top-header{
+    display: flex;
+    border-top: 3px solid rgb(0, 0, 0);
+    height: auto;
+    background-image: url('fon_header.jpg');
+}
+
+.container1 {
+    justify-content: left;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+.container2 {
+    font-family: system-ui;
+    justify-content: right;
+    align-items: center;
+    text-align: right;
+    margin: 4px 25px 0px 130px;
+    width: 400px;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+.container3 {
+    font-size: 19px;
+    justify-content: left;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    border-top: 3px solid rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 0, 0);
+    padding: 0 20px;
+}
+
+.logo-image {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    margin-top: 20px;
+    border-radius: 9px;
+    border: 2px solid rgb(79, 79, 79);
+}
+.logoHref {
+    width: 30px;
+}
+
+a {
+    color:black;
+    display: block;
+    margin: 0px 5px 5px 15px;
+  }
+
+.a_nav {
+    cursor: default;
+    font-size: 16px;
+}
+
+.animation {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 18px; 
+    padding: 5px;
+    transition: color 0.3s;
+}
+.animation::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: rgb(74, 80, 0);
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+.animation:hover::after {
+    width: 100%;
+}
+
+.animation2:hover {
+    transform:scaleX(1.025);
+}
+
+nav {
+    width: 80%;
+    min-width: 120px;
+    max-width: 250px;
+}
+
+.navigation1 {
+    font-weight: 700;
+    font-size: 14px;
+    width: 100%;
+    height: 1900px;
+    border-right: 3px solid rgb(0, 0, 0);
+    background-image: url('fon_nav.jpg');
+    background-size: cover;
+}
+.navigation2 {
+    font-weight: 700;
+    font-size: 14px;
+    width: 100%;
+    height: 1200px;
+    border-right: 3px solid rgb(0, 0, 0);
+    background-image: url('fon_nav.jpg');
+    background-size: cover;
+}
+.navigation3 {
+    font-weight: 700;
+    font-size: 14px;
+    width: 100%;
+    height: 2700px;
+    border-right: 3px solid rgb(0, 0, 0);
+    background-image: url('fon_nav.jpg');
+    background-size: cover;
+}
+
+
+.navigationText {
+    padding-top: 15px;
+}
+
+main {
+    display: flex;
+}
+
+.mainText {
+    font-size: 18px;
+    margin-left: 30px;
+    margin-right: 45px;
+}
+
+.profile {
+    display: flex;
+}
+
+.profileText {
+    height: auto;
+    width: 50%;
+}
+.profilePic {
+    width: 300px;
+    height: 300px;
+    margin-left: 20px;
+    margin-top: 42px;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    border-top: 3px solid black;
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+.name {
+    margin-left: auto;
+    width: auto;
+    min-width: 250px;
+}
+.nnpictures {
+    margin-top: 11px;
+    display: flex;
+    margin-left: auto;
+}
+.telegram {
+    border-radius: 9px;
+}
+
+.uslugi {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.usluga1 {
+    height: 100%; 
+    width: 80%;
+    border: 3px solid black;
+    border-radius: 3px 3px 6px 6px;
+    margin: 10px 30px 0px 0px;
+    box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+.uslugaText {
+    font-size: 23px;
+    margin: 6px 0px 0px 30px;
+}
+.usluga_pic {
+    width: 100%;
+    height: 1%;
+    object-fit: cover;
+    border-bottom: 2px solid black;
+}
+.zakazButton {
+    font-family: cursive;
+    font-size: 16px;
+    margin: 6px 0px 0px 30px;
+    width: 90px;
+    height: 27px;
+    border: 2px solid black;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+.zakazButton:hover {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    transform: scale(1.01);
+    background-color: rgb(255, 250, 216);
+}
+.zakazButton:active {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    transform: scale(0.95);
+}
+
+.different_text {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 21px;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    cursor: pointer;
+    padding: 30px;
+    overflow-y: auto;
+    display: none;
+  }
+
+  .modal__main {
+    position: relative;
+    max-width: 450px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    color: #000;
+    border-radius: 16px;
+    padding: 30px;
+    cursor: default;
+    border: 3px solid rgb(39, 38, 38);
+  }
+
+  .modal__title {
+    margin-bottom: 30px;
+  }
+
+  .modal__close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+.modal__form {
+    margin-top: 30px;
+    display: block;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 71%;
+    font-family: cursive;
+    border: 2px solid black;
+}
+select {
+    margin-right: 49.5%;
+    width: 23%;
+    font-family: cursive;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.date {
+    width: 22%;
+    margin-right: 49.5%;
+    cursor: pointer;
+}
+textarea {
+    width: 71%;
+    height: 70px;
+    margin-left: 4%;
+    border: 2px solid black;
+    font-family: cursive;
+}
+.regCheckbox {
+    width: 15px;
+    cursor: pointer;
+}
+.submit {
+    background-color: transparent;
+    width: 50%;
+    margin-left: 25%;
+    cursor: pointer;
+}
+
+video {
+    margin: 35px 30px 30px 32%;
+    border-radius: 18px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+table {
+    text-align: left;
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+.table-container {
+    overflow-x: auto;
+    min-width: 300px;
+}
+th {
+    background-color: #d0d0d0;
+    padding: 5px;
+}
+td {
+    padding: 5px;
+}
+.tr1 {
+    background-color: #ededed;
+}
+.tr1:hover{
+    color: rgba(201, 194, 145, 0.904);
+}
+.tr2:hover{
+    color: rgb(201, 194, 145);
+}
+.attendCheckbox {
+    width: 15px;
+    accent-color: rgb(185, 185, 185);
+}
+
+iframe {
+    border: 3px solid black;
+}
+
+.pdf_container {
+    border: 3px solid black;
+    width: 80%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    position: relative;
+    margin-top: 45px;
+}
+.pdf_title {
+    position: absolute;
+    top: -19px;
+    left: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 8px 4px 8px;
+    font-size: 18px;
+    font-weight: 700;
+    border: 3px solid black;
+}
+.pdf_frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    body {
+        font-family: system-ui;
+        width: 100%;
+        font-size: 16px;
+        height: 100%;
+        margin: 0;
+    }
+    
+    header {
+        width: 100%;
+    }
+    
+    .top-header{
+        display: flex;
+        border-top: 3px solid rgb(0, 0, 0);
+        height: auto;
+        background-image: url('fon_header.jpg');
+        width: 100%
+    }
+    
+    .container1 {
+        justify-content: left;
+        height: 100px;
+        width: 100%;
+        align-items: center;
+        padding: 0 20px;
+        margin-top: 10px;
+    }
+    
+    .container2 {
+        font-family: system-ui;
+        justify-content: right;
+        align-items: center;
+        text-align: right;
+        margin: 4px 25px 0px 130px;
+        width: 400px;
+        font-size: 17px;
+        font-weight: 800;
+    }
+    
+    .container3 {
+        font-size: 19px;
+        justify-content: left;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        border-top: 3px solid rgb(0, 0, 0);
+        border-bottom: 3px solid rgb(0, 0, 0);
+        padding: 0 20px;
+    }
+    
+    .logo-image {
+        width: 50px;
+        height: 50px;
+        margin-left: 15px;
+        margin-top: 20px;
+        border-radius: 9px;
+        border: 2px solid rgb(79, 79, 79);
+    }
+    .logoHref {
+        width: 30px;
+    }
+    
+    a {
+        color:black;
+        display: block;
+        margin: 0px 5px 5px 15px;
+      }
+    
+    .a_nav {
+        cursor: default;
+        font-size: 16px;
+    }
+    
+    .animation {
+        position: relative;
+        text-decoration: none;
+        color: black;
+        font-size: 18px; 
+        padding: 5px;
+        transition: color 0.3s;
+    }
+    .animation::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: rgb(74, 80, 0);
+        bottom: 0;
+        left: 0;
+        transition: width 0.3s ease;
+    }
+    .animation:hover::after {
+        width: 100%;
+    }
+    
+    .animation2:hover {
+        transform:scaleX(1.025);
+    }
+    
+    nav {
+        width: 50%;
+        min-width: 120px;
+        max-width: 250px;
+    }
+    
+    .navigation1 {
+        font-weight: 700;
+        font-size: 14px;
+        width: 100%;
+        height: 1700px;
+        border-right: 3px solid rgb(0, 0, 0);
+        background-image: url('fon_nav.jpg');
+        background-size: cover;
+    }
+    .navigation2 {
+        font-weight: 700;
+        font-size: 14px;
+        width: 100%;
+        height: 1700px;
+        border-right: 3px solid rgb(0, 0, 0);
+        background-image: url('fon_nav.jpg');
+        background-size: cover;
+    }
+    .navigation3 {
+        font-weight: 700;
+        font-size: 14px;
+        width: 100%;
+        height: 2700px;
+        border-right: 3px solid rgb(0, 0, 0);
+        background-image: url('fon_nav.jpg');
+        background-size: cover;
+    }
+    
+    
+    .navigationText {
+        padding-top: 15px;
+    }
+    
+    main {
+        display: flex;
+    }
+    
+    .mainText {
+        font-size: 18px;
+        margin-left: 30px;
+        margin-right: 45px;
+    }
+    
+    .profile {
+        display: flex;
+    }
+    
+    .profileText {
+        height: auto;
+        width: 50%;
+    }
+    .profilePic {
+        width: 220px;
+        height: 220px;
+        margin-left: 20px;
+        margin-top: 42px;
+        border-radius: 10px;
+        border: 2px solid rgb(255, 255, 255);
+        box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    }
+    
+    footer {
+        border-top: 3px solid black;
+        display: flex;
+        align-items: center;
+        height: auto;
+    }
+    
+    .name {
+        margin-left: auto;
+        width: auto;
+        min-width: 250px;
+    }
+    .nnpictures {
+        margin-top: 11px;
+        display: flex;
+        margin-left: auto;
+    }
+    .telegram {
+        border-radius: 9px;
+    }
+    
+    .uslugi {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+    }
+    
+    .uslugi > :nth-child(3) {
+        justify-self: center;
+        margin-left: 87.5%;
+    }
+    
+    .usluga1 {
+        height: 100%; 
+        width: 80%;
+        border: 3px solid black;
+        border-radius: 3px 3px 6px 6px;
+        margin: 10px 30px 0px 0px;
+        box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+    }
+    .uslugaText {
+        font-size: 23px;
+        margin: 6px 0px 0px 30px;
+    }
+    .usluga_pic {
+        width: 100%;
+        height: 1%;
+        object-fit: cover;
+        border-bottom: 2px solid black;
+    }
+    .zakazButton {
+        font-family: cursive;
+        font-size: 16px;
+        margin: 6px 0px 0px 30px;
+        width: 90px;
+        height: 27px;
+        border: 2px solid black;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        background-color: transparent;
+        color: black;
+        transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+    }
+    .zakazButton:hover {
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+        transform: scale(1.01);
+        background-color: rgb(255, 250, 216);
+    }
+    .zakazButton:active {
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+        transform: scale(0.95);
+    }
+    
+    .different_text {
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 21px;
+    }
+    
+    .modal {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        cursor: pointer;
+        padding: 30px;
+        overflow-y: auto;
+        display: none;
+      }
+    
+      .modal__main {
+        position: relative;
+        max-width: 450px;
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+        color: #000;
+        border-radius: 16px;
+        padding: 30px;
+        cursor: default;
+        border: 3px solid rgb(39, 38, 38);
+      }
+    
+      .modal__title {
+        margin-bottom: 30px;
+      }
+    
+      .modal__close {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 22px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    
+    .modal__form {
+        margin-top: 30px;
+        display: block;
+    }
+    
+    .form {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    
+    input {
+        width: 71%;
+        font-family: cursive;
+        border: 2px solid black;
+    }
+    select {
+        margin-right: 49.5%;
+        width: 23%;
+        font-family: cursive;
+        border: 2px solid black;
+        cursor: pointer;
+    }
+    .date {
+        width: 22%;
+        margin-right: 49.5%;
+        cursor: pointer;
+    }
+    textarea {
+        width: 71%;
+        height: 70px;
+        margin-left: 4%;
+        border: 2px solid black;
+        font-family: cursive;
+    }
+    .regCheckbox {
+        width: 15px;
+        cursor: pointer;
+    }
+    .submit {
+        background-color: transparent;
+        width: 50%;
+        margin-left: 25%;
+        cursor: pointer;
+    }
+    
+    video {
+        margin: 35px 30px 30px 32%;
+        border-radius: 18px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+        border: 2px solid rgb(255, 255, 255);
+    }
+    
+    table {
+        text-align: left;
+        border: 3px solid black;
+        border-collapse: collapse;
+        width: 700px;
+        height: 400px;
+    }
+    .table-container {
+        overflow-x: auto;
+    }
+    th {
+        background-color: #d0d0d0;
+        padding: 5px;
+    }
+    td {
+        padding: 5px;
+    }
+    .tr1 {
+        background-color: #ededed;
+    }
+    .tr1:hover{
+        color: rgba(201, 194, 145, 0.904);
+    }
+    .tr2:hover{
+        color: rgb(201, 194, 145);
+    }
+    .attendCheckbox {
+        width: 15px;
+        accent-color: rgb(185, 185, 185);
+    }
+
+    
+    iframe {
+        border: 3px solid black;
+        border-radius: 2px;
+        width: 75%;
+        aspect-ratio: 7 / 3;
+    }
+    
+    .pdf_container {
+        border: 3px solid black;
+        width: 75%;
+        height: auto;
+        aspect-ratio: 3 / 4;
+        position: relative;
+        margin-top: 45px;
+    }
+    .pdf_title {
+        position: absolute;
+        top: -19px;
+        left: 10px;
+        background-color: rgb(255, 255, 255);
+        padding: 0px 8px 4px 8px;
+        font-size: 18px;
+        font-weight: 700;
+        border: 3px solid black;
+    }
+    .pdf_frame {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+}
+
+@media (max-width: 767px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Сбоку контейнер перемещается вниз */
+    nav {
+        position: static; /* Навигация будет в потоке документа */
+        width: 100%; /* Занимает всю ширину экрана */
+        max-width: 1000px;
+        height: auto; /* Высота будет зависеть от контента */
+        background-image: none; /* Убираем фоновое изображение */
+        border-bottom: 3px solid rgb(0, 0, 0);
+        align-items: center;
+    }
+
+    .navigation1 {
+        height: auto; /* Высота будет зависеть от контента */
+        border-right: none; /* Убираем правую границу */
+        background-image: none; /* Убираем фоновое изображение */
+        width: 100%;
+    }
+    .navigation2 {
+        height: auto; /* Высота будет зависеть от контента */
+        border-right: none; /* Убираем правую границу */
+        background-image: none; /* Убираем фоновое изображение */
+        width: 100%;
+    }
+    .navigation3 {
+        height: auto; /* Высота будет зависеть от контента */
+        border-right: none; /* Убираем правую границу */
+        background-image: none; /* Убираем фоновое изображение */
+        width: 100%;
+    }
+
+    .navigationText {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    /* Добавляем отступ между container3 и nav */
+    .container3 {
+        font-size: 19px;
+        justify-content: flex-start; /* Можно использовать flex-start, чтобы выровнять элементы сверху */
+        height: auto; /* Автоматическая высота для вертикального меню */
+        display: flex;
+        flex-direction: column; /* Меняем направление на вертикальное */
+        align-items: flex-start; /* Выравнивание элементов по левому краю */
+        border-top: 3px solid rgb(0, 0, 0);
+        border-bottom: 3px solid rgb(0, 0, 0);
+        padding: 20px 0; /* Меняем отступы для вертикального размещения */
+        align-items: center;
+    }
+
+    .profilePic {
+        width: 140px;
+        height: 140px;
+    }
+
+    .video1 {
+        margin: 5% 3% 3% 5%;
+        border-radius: 18px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+        border: 2px solid rgb(255, 255, 255);
+    }
+    .video2 {
+        margin: 5% 5% 3% 5%;
+        border-radius: 18px;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+        border: 2px solid rgb(255, 255, 255);
+    }
+
+    .mainText {
+        margin: 0px 15px 0px 15px;
+    }
+
+    .uslugi {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        margin: 0;
+    }
+    .usluga1 {
+        margin-left: 10%;
+    }
+
+    .different_text {
+        margin-bottom: 20px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    textarea {
+        margin-left: 0;
+    }
+    
+    table {
+        text-align: left;
+        border: 3px solid black;
+        border-collapse: collapse;
+        min-width: 1000px;
+        width: 100%;
+    }
+    .table-container {
+        overflow-x: auto;
+    }
+
+    iframe {
+        border: 3px solid black;
+        border-radius: 2px;
+        width: 75%;
+        height: 40%;
+    }
+    .pdf_container {
+        border: 3px solid black;
+        width: 75%;
+        height: auto;
+        position: relative;
+        margin-top: 45px;
+        margin-bottom: 20px;
+    }
+}
